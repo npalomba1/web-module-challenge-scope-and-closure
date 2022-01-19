@@ -160,7 +160,7 @@ function scoreboard(inningScoreCB, inningCB, numInnings) {
     const currentInning = inningScoreCB(inningCB)
     homeScore = homeScore + currentInning.Home
     awayScore = awayScore + currentInning.Away
-    scoreByInning.push(`Inning ${i + 1}: Away ${currentInning.Away} - Home ${currentInning.Home}`);
+    scoreByInning.push(`Inning ${[i] + 1}: Away ${currentInning.Away} - Home ${currentInning.Home}`);
   }
   if (homeScore === awayScore) {
     scoreByInning.push(`This game will require extra innings: Away ${currentInning.Away} - Home ${currentInning.Home}`)
